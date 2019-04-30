@@ -5,6 +5,11 @@ package students.api;
 
 import java.time.LocalDate;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
 public class App {
     public String getGreeting() {
         return "Hello world.";
