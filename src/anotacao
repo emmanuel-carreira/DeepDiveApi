@@ -1,0 +1,3 @@
+curl -XPOST -H "Content-Type: application/json" localhost:8080/institutions -d '{"name": "UFPE", "foundationDate": "2000-01-30"}'
+
+curl -XPOST -H "Content-Type: application/json" localhost:8080/students -d '{"name": "carlinhos", "birthDate": "1995-02-21", "institution": 1}'

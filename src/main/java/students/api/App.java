@@ -3,26 +3,12 @@
  */
 package students.api;
 
-import java.time.LocalDate;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-
-        final Student carlinhos = Student.of(1L, "Carlinhos", LocalDate.now());
-        System.out.println(carlinhos);
-
-        final Instituition ufpe = Instituition.of(2L, "Universidade Federal de Pernambuco", LocalDate.now());
-        System.out.println(ufpe);
-
+        SpringApplication.run(App.class, args);
     }
 }
