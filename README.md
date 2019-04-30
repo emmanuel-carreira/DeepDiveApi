@@ -1,2 +1,2 @@
-# DeepDiveApi
-Deep Dive Api Course by InLoco
+# students-api
+Demo app for Deep Dive
