@@ -3,6 +3,8 @@
  */
 package students.api;
 
+import java.time.LocalDate;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -10,5 +12,12 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        final Student carlinhos = Student.of(1L, "Carlinhos", LocalDate.now());
+        System.out.println(carlinhos);
+
+        final Instituition ufpe = Instituition.of(2L, "Universidade Federal de Pernambuco", LocalDate.now());
+        System.out.println(ufpe);
+
     }
 }
